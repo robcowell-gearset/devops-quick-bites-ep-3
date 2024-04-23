@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Order Status Updater" icon-name="utility:record_update">
+        <div class="slds-m-around_medium">
+            <template if:true={order.data}>
+                <lightning-combobox name="status"
+                                    label="Order Status"
+                                    value={order.data.fields.Status__c.value}
+                                    options={statusOptions}
+                                    onchange={handleStatusChange}>
+                </lightning-combobox>
+                <lightning-button variant="brand"
+                                  label="Update Status"
+                                  title="Update Status"
+                                  onclick={updateOrderStatus}
+                                  class="slds-m-top_medium">
+                </lightning-button>
+            </template>
+            <template if:true={order.error}>
+                <p class="slds-text-color_error">Error fetching order details: {order.error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

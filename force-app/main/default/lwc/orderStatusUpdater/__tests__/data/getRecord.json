@@ -1,0 +1,16 @@
+{
+        "id": "a0120000006FHAQAA4",
+        "fields": {
+            "Status__c": {
+                "value": "Pending"
+            }
+        },
+        "apiName": "Order__c",
+        "childRelationships": {},
+        "recordTypeInfo": null,
+        "systemModstamp": "2020-01-01T00:00:00.000Z",
+        "lastModifiedById": "0052v00000jXYZA2",
+        "createdById": "0052v00000jXYZA2",
+        "lastModifiedDate": "2020-01-01T00:00:00.000Z",
+        "createdDate": "2020-01-01T00:00:00.000Z"
+}
